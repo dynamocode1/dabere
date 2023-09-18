@@ -260,7 +260,8 @@ class Purchase:
     @purchase_bp.route('/order')
     @user.login_required
     def order():
-        return render_template('order.html')
+    	
+    	return render_template('order.html')
 
     @purchase_bp.route('/')
     def index():
